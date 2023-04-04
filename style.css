@@ -1,3 +1,4 @@
+/* Mobile */
 article {
   display: flex;
   flex-wrap: wrap;
@@ -42,4 +43,45 @@ main {
 
 #feature-3 {
   background-color: #C8C6FA;
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+   body > article > section {
+    width: 50%;
+    height: 50vw;
+   }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+  section[id^="feature-"] {
+    flex:1;
+    height:40vw;
+
+   }
+
+   #feature-2{
+    order: 1 ;
+   }
+
+   header{
+    height:50vh;
+   }
+   
+
+   #sign-up {
+    height: 150px;
+    order: 2;
+   }
+
+  
+  main {
+    order: 3;
+
+  }
+
+   
+
 }
